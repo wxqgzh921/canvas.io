@@ -8,8 +8,11 @@
 <script type="text/javascript" src="js/rem.js"></script>
 <link rel="stylesheet" href="css/swiper.min.css"/>
 <link rel="stylesheet" href="css/animate.css"/>
+<link rel="stylesheet" href="css/normalize.css"/>
+<link rel="stylesheet" href="css/htmleaf-demo.css"/>
 <script type="text/javascript" src="js/swiper.min.js"></script>
 <script type="text/javascript" src="js/swiper.animate1.0.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.warpdrive.js" ></script>
 <style type="text/css">
 *{ margin:0; padding:0;}
 html,body{ 
@@ -24,40 +27,9 @@ html,body{
 }
 .one{ 
     height:100%;
-	background:#f7cd5f;
 }
 .two{
 	height:100%;
-	background:#f7cd5f;
-}
-.four{ 
-    height:100%;
-	background:#32b8b9;
-}
-.three{ 
-    height:100%;
-	background:#d6dde7;
-}
-.five{ 
-    height:100%;
-	background:#d6dde7;
-}
-.six{ 
-    height:100%;
-	background:#28b779;
-}
-.seven{ 
-    height:100%;
-	background:#d6dde7;
-}
-.eight{ 
-   height:100%;
-   background:#f7cd5f; 	
-}
-.nine{
-	height:100%;
-	background:url("imgs/back.jpg");
-	background-size:100% 100%;
 }
 .one .one-back{ width:80%; position:absolute; top:2rem; left:0.7rem;}
 .one .one-no{ width:45%; position:absolute; top:3.3rem; left:1.8rem;}
@@ -75,56 +47,6 @@ html,body{
 .two .two-touxiang{ width:8%; position:absolute; top:2.7rem; left:2rem;}
 .two .two-total{ width:30%; position:absolute; top:2.7rem; left:2.6rem;}
 
-.three .three-complain{ width:60%; position:absolute; top:2rem; left:1.3rem;}
-.three .three-eat{width:78%; position:absolute; top:2.7rem; left:0.6rem;}
-.three .three-mt{width:7%; position:absolute; top:2.7rem; left:4rem;}
-.three .three-msay{width:32%; position:absolute; top:2.7rem; left:1.8rem;}
-.three .three-tx{width:7%; position:absolute; top:3.3rem; left:1.8rem;}
-.three .three-mesay{width:32%; position:absolute; top:3.3rem; left:2.4rem;}
-
-.four .four-wh{ width:60%; position:absolute; top:2rem; left:1.3rem;}
-.four .four-work{ width:78%; position:absolute; top:2.7rem; left:0.6rem;}
-.four .four-gtx{ width:8%; position:absolute; top:2.7rem; left:1.8rem;}
-.four .four-gw{ width:32%; position:absolute; top:2.7rem; left:2.4rem;}
-
-.five .five-doing{ width:60%; position:absolute; top:2rem; left:1.3rem;}
-.five .five-talk{width:75%; position:absolute; top:2.7rem; left:0.8rem;}
-.five .five-dt{width:7%; position:absolute; top:2.7rem; left:1.8rem;}
-.five .five-dsay{width:33%; position:absolute; top:2.7rem; left:2.4rem;}
-.five .five-tx{width:7%; position:absolute; top:3.3rem; left:4rem;}
-.five .five-mesay{width:31%; position:absolute; top:3.3rem; left:1.8rem;}
-
-.six .six-firsttime{ width:60%; position:absolute; top:2rem; left:1.3rem;}
-.six .six-chat{width:75%; position:absolute; top:2.7rem; left:0.8rem;}
-.six .six-bosstx{width:7%; position:absolute; top:2.7rem; left:1.8rem;}
-.six .six-bs1{width:16%; position:absolute; top:2.7rem; left:2.4rem;}
-.six .six-metx{width:7%; position:absolute; top:3.3rem; left:4rem;}
-.six .six-mesay{width:22%; position:absolute; top:3.3rem; left:2.5rem;}
-.six .six-bosstx2{ width:7%; position:absolute; top:3.9rem; left:1.8rem;}
-.six .six-bs2{width:28%; position:absolute; top:3.9rem; left:2.4rem;}
-.six .six-metx2{width:7%; position:absolute; top:4.4rem; left:4rem;}
-.six .six-mesay2{ width:28%; position:absolute; top:4.4rem; left:2rem;}
-
-.seven .seven-care{ width:60%; position:absolute; top:2rem; left:1.3rem;}
-.seven .seven-call{width:75%; position:absolute; top:2.7rem; left:0.8rem;}
-.seven .seven-gm-tx{width:7%; position:absolute; top:2.7rem; left:1.8rem;}
-.seven .seven-gm-s1{width:33%; position:absolute; top:2.7rem; left:2.4rem;}
-.seven .seven-me-tx{width:7%; position:absolute; top:3.3rem; left:4.2rem;}
-.seven .seven-mm-s1{ width:26%; position:absolute; top:3.3rem;left:2.4rem;} 
-.seven .seven-gm-tx2{width:7%; position:absolute; top:3.8rem; left:1.8rem;}
-.seven .seven-gm-s2{ width:18%; position:absolute; top:3.8rem; left:2.4rem;}
-
-.eight .eight-havetime{ width:73%; position:absolute; top:2rem; left:1rem; }
-.eight .eight-but{ width:22%; position:absolute; top:2.6rem; left:2.4rem; }
-.eight .eight-wait{ width:50%; position:absolute; top:3.2rem; left:1.5rem; }
-.eight .eight-shalou{ width:30%; position:absolute; top:3.8rem; left:2.2rem; }
-.eight .eight-count{ width:70%; position:absolute; top:6.4rem; left:0.8rem; }
-
-.nine .nine-andfam{ width:30%; position:absolute; top:28%; left:2.4rem;}
-.nine .nine-happy{ width:40%; position:absolute; top:33%; left:2.1rem;}
-.nine .nine-beauty{ width:40%; position:absolute; top:38%; left:2.2rem;}
-.nine .nine-and{ width:12%; position:absolute; top:46%; left:2.4rem;}
-.nine .nine-home{ width:50%; position:absolute; top:46%; left:1.6rem;}
 
 .box .music-logo{width: 8%;position: absolute;top: 0.3rem;right:0.3rem;}
 .playing{ -webkit-animation: circle 2s linear infinite; -moz-animation: circle 2s linear infinite; -o-animation:circle 2s linear infinite; animation:circle 2s linear infinite;}
@@ -144,159 +66,50 @@ html,body{
     0%{ transform:rotate(0);}
 	100%{ transform:rotate(1turn)};	
 }
-
-#loading{
-	display:block;
-	opacity:1;
-	height:100%;
-	overflow-y:hidden;
-	background:#fff;
-}
-#loading .load-img{ width:30%; position:absolute; top:30%; left:35%; text-algin:center;}
 </style>
 </head>
 
 <body> 
-<audio src="music/4301e31a-5022-4210-a96d-d36bda672c30.mp3" loop  id="audio"></audio>
-<div class="swiper-slide loading" id="loading">
+<audio src="music/yq0KA1RtR0SAQmUgAAhGwF6ejdQ433.mp3" loop  id="audio"></audio>
+<!--<div class="swiper-slide loading" id="loading">
     <img src="imgs/init.GIF" class="load-img"/>
-</div>
+</div>-->
 <div class="swiper-container main" id="main">
     <div class="swiper-wrapper box " id="box">
-         <div class="one swiper-slide">
+         <div class="one swiper-slide" id="holder">
                <img src="imgs/music.gif" class="music-logo"/>
-               <img src="imgs/back1.png" class="one-back ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="2s"/>
-               <img src="imgs/no.png" class="one-no ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="1s"/>
-               <img src="imgs/we.png" class="one-we ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="1.5s" />
-               <img src="imgs/more.png" class="one-more ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="2s"/>
+              
                <p class="jiantou">^</p>
           </div>
-          <div class=" two swiper-slide">
+          <div class=" two swiper-slide" id="holder2">
                <img src="imgs/music.gif" class="music-logo" />
-               <img src="imgs/smile.png" class="two-smile ani" swiper-animate-effect="fadeIn" swiper-animate-duration="2s"/>
-               <img src="imgs/sm-people.gif" class="two-sm-people ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1.2s" swiper-animate-delay="0.5s"/>
-               <img src="imgs/touxiang.png" class="two-touxiang ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1.5s" swiper-animate-delay="1.5s"/>
-               <img src="imgs/total.png" class="two-total ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1.5s" swiper-animate-delay="1.8s"/>
+              
                <p class="jiantou">^</p>
           </div>
-          <div class="three swiper-slide">
-               <img src="imgs/music.gif" class="music-logo"/>
-               <img src="imgs/complain.png" class="three-complain ani" swiper-animate-effect="fadeIn" swiper-animate-duration="2s"/>
-               <img src="imgs/eat.gif" class="three-eat ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1.2s" swiper-animate-delay="0.6s"/>
-               <img src="imgs/mother-tx.png" class="three-mt ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1.5s" swiper-animate-delay="1.5s"/>
-               <img src="imgs/m-say1.png" class="three-msay ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1.5s" swiper-animate-delay="2s"/>
-               <img src="imgs/touxiang.png" class="three-tx ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1.5s" swiper-animate-delay="2.5s"/>
-               <img src="imgs/me-say1.png" class="three-mesay ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1.5s" swiper-animate-delay="3s"/>
-               <p class="jiantou">^</p>
-          </div>
-          <div class="four swiper-slide">
-               <img src="imgs/music.gif" class="music-logo"/>
-               <img src="imgs/workhard.png" class="four-wh ani" swiper-animate-effect="fadeIn" swiper-animate-duration="2s"/>
-               <img src="imgs/work.gif" class="four-work ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1.2s" swiper-animate-delay="0.5s"/>
-               <img src="imgs/girl-tx.png" class="four-gtx ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1.5s" swiper-animate-delay="1.5s"/>
-               <img src="imgs/girl-word.png" class="four-gw ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1.5s" swiper-animate-delay="1.8s"/>
-               <p class="jiantou">^</p>
-          </div>
-          <div class="five swiper-slide" >
-               <img src="imgs/music.gif" class="music-logo"/>
-               <img src="imgs/doing.png" class="five-doing ani" swiper-animate-effect="fadeIn" swiper-animate-duration="2s"/>
-               <img src="imgs/talk.gif" class="five-talk ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1.2s" swiper-animate-delay="0.6s"/>
-               <img src="imgs/dadtx.png" class="five-dt ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1.5s" swiper-animate-delay="1.5s"/>
-               <img src="imgs/dad-s.png" class="five-dsay ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1.5s" swiper-animate-delay="2s"/>
-               <img src="imgs/girl-tx.png" class="five-tx ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1.5s" swiper-animate-delay="2.5s"/>
-               <img src="imgs/girl-s.png" class="five-mesay ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1.5s" swiper-animate-delay="3s"/>
-               <p class="jiantou">^</p>
-          </div>
-          <div class="six swiper-slide">
-               <img src="imgs/music.gif" class="music-logo"/>
-               <img src="imgs/firsttime.png" class="six-firsttime ani" swiper-animate-effect="fadeIn" swiper-animate-duration="2s"/>
-               <img src="imgs/chat.gif" class="six-chat ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1.2s" swiper-animate-delay="0.6s"/>
-               <img src="imgs/bosstx.png" class="six-bosstx ani" swiper-animate-effect="fadeIn" swiper-animate-duration="2s" swiper-animate-delay="1.5s"/>
-               <img src="imgs/boss-s1.png" class="six-bs1 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="2s" swiper-animate-delay="2s"/>
-               <img src="imgs/me-tx.png" class="six-metx ani" swiper-animate-effect="fadeIn" swiper-animate-duration="2s" swiper-animate-delay="2.8s"/>
-               <img src="imgs/huifu1.png" class="six-mesay ani" swiper-animate-effect="fadeIn" swiper-animate-duration="2s" swiper-animate-delay="3.3s"/>
-               <img src="imgs/bosstx.png" class="six-bosstx2 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="2s" swiper-animate-delay="3.8s"/>
-               <img src="imgs/boss-s2.png" class="six-bs2 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="2s" swiper-animate-delay="4.5s"/>
-               <img src="imgs/me-tx.png" class="six-metx2 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="2s" swiper-animate-delay="5s"/>
-               <img src="imgs/huifu2.png" class="six-mesay2 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="2s" swiper-animate-delay="5.5s"/>
-               <p class="jiantou">^</p>
-          </div>
-          <div class="seven swiper-slide">
-                <img src="imgs/music.gif" class="music-logo"/>
-               <img src="imgs/care.png" class="seven-care ani" swiper-animate-effect="fadeIn" swiper-animate-duration="2s"/>
-               <img src="imgs/call.gif" class="seven-call ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1.5s" swiper-animate-delay="1.5s"/>
-               <img src="imgs/gm-tx.png" class="seven-gm-tx ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1.5s" swiper-animate-delay="2.3s"/>
-               <img src="imgs/gm-s1.png" class="seven-gm-s1 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1.5s" swiper-animate-delay="3.1s"/>
-               <img src="imgs/me-tx.png" class="seven-me-tx ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1.5s" swiper-animate-delay="3.9s"/>
-               <img src="imgs/mm-s1.png" class="seven-mm-s1 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1.5s" swiper-animate-delay="4.7s"/>
-               <img src="imgs/gm-tx.png" class="seven-gm-tx2 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1.5s" swiper-animate-delay="5.5s"/>
-               <img src="imgs/gm-s2.png" class="seven-gm-s2 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1.5s" swiper-animate-delay="6.3s"/>
-               <p class="jiantou">^</p>
-          </div>
-          <div class="eight swiper-slide">
-               <img src="imgs/music.gif" class="music-logo"/>
-               <img src="imgs/havetime.png" class="eight-havetime ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="2s"/>
-               <img src="imgs/but.png" class="eight-but ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="1s"/>
-               <img src="imgs/wait.png" class="eight-wait ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="2s"/>
-               <img src="imgs/shalou.png" class="eight-shalou ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="3s"/>
-               <img src="imgs/count.png" class="eight-count ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1.5s" swiper-animate-delay="4s"/>          
-               <p class="jiantou">^</p>
-          </div>
-          <div class="nine swiper-slide">
-               <img src="imgs/music.gif" class="music-logo"/>
-               <img src="imgs/andfam.png" class="nine-andfam ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="2s"/>
-               <img src="imgs/happy.png" class="nine-happy ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="1s"/>
-               <img src="imgs/beauty.png" class="nine-beauty ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="2s"/>
-               <img src="imgs/and.png" class="nine-and ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1.5s" swiper-animate-delay="3s"/>
-               <img src="imgs/home.png" class="nine-home ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1.5s" swiper-animate-delay="3.8s"/>
-               <p class="jiantou">^</p>
-          </div>
+          
     </div>
-     <!-- 如果需要分页器 -->
-	  <!--  <div class="swiper-pagination"></div>-->
-	    
-	    <!-- 如果需要导航按钮 -->
-	    <!-- <div class="swiper-button-prev"></div>
-	    <div class="swiper-button-next"></div> -->
-	    
-	    <!-- 如果需要滚动条 -->
-	    <!--<div class="swiper-scrollbar"></div>-->
 </div>
 </body>
 <script type="text/javascript">
 	     //  Swiper插件
-			   var mySwiper = new Swiper ('.swiper-container', {
+			var mySwiper = new Swiper ('.swiper-container', {
 				direction: 'vertical',
-				loop: true,
-				
-				// 如果需要分页器
-				/*pagination: '.swiper-pagination',*/
-				
-				// 如果需要前进后退按钮
-			/*	nextButton: '.swiper-button-next',
-				prevButton: '.swiper-button-prev',
-				*/
-				// 如果需要滚动条
-				/*scrollbar: '.swiper-scrollbar',*/
-		
-			  
-	       //swiper animation 动画	  
-		   
-			  onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
-				swiperAnimateCache(swiper); //隐藏动画元素 
-				swiperAnimate(swiper); //初始化完成开始动画
-			  }, 
-			  onSlideChangeEnd: function(swiper){ 
-				swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
-			  } 
-	      })   
-		  
+				loop: false,
+			    onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+					swiperAnimateCache(swiper); //隐藏动画元素 
+					swiperAnimate(swiper); //初始化完成开始动画
+			    }, 
+			    onSlideChangeEnd: function(swiper){ 
+					swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+			    } 
+	        })   
+		    var warpdrive = new WarpDrive( document.getElementById( 'holder' ) );
 		 window.onload = function(){
-			  var oLoading = document.getElementById("loading");
-			     setTimeout(function(){
-				       oLoading.style.display="none";
-					   oLoading.style.opacity="0";  
-			     },700);
+//			  var oLoading = document.getElementById("loading");
+//			     setTimeout(function(){
+//				       oLoading.style.display="none";
+//					   oLoading.style.opacity="0";  
+//			     },700);
 		 	  var oAudio = document.getElementById("audio");
 			  oAudio.play();
 			  $(".swiper-slide .music-logo").addClass("playing");
@@ -315,4 +128,52 @@ html,body{
 			     
 		  }     
 </script>
+<script>
+
+        $( document ).ready( function() {
+            var settings = {
+
+                width: 414,
+                height: 736,
+                autoResize: false,
+                autoResizeMinWidth: null,
+                autoResizeMaxWidth: null,
+                autoResizeMinHeight: null,
+                autoResizeMaxHeight: null,
+                addMouseControls: true,
+                addTouchControls: true,
+                hideContextMenu: true,
+                starCount: 6666,
+                starBgCount: 2222,
+                starBgColor: { r:255, g:255, b:255 },
+                starBgColorRangeMin: 10,
+                starBgColorRangeMax: 40,
+                starColor: { r:255, g:255, b:255 },
+                starColorRangeMin: 10,
+                starColorRangeMax: 100,
+                starfieldBackgroundColor: { r:0, g:0, b:0 },
+                starDirection: 1,
+                starSpeed: 20,
+                starSpeedMax: 200,
+                starSpeedAnimationDuration: 2,
+                starFov: 300,
+                starFovMin: 200,
+                starFovAnimationDuration: 2,
+                starRotationPermission: true,
+                starRotationDirection: 1,
+                starRotationSpeed: 0.0,
+                starRotationSpeedMax: 1.0,
+                starRotationAnimationDuration: 2,
+                starWarpLineLength: 2.0,
+                starWarpTunnelDiameter: 100,
+                starFollowMouseSensitivity: 0.025,
+                starFollowMouseXAxis: true,
+                starFollowMouseYAxis: true
+
+            };
+            var warpdrive = new WarpDrive( document.getElementById( 'holder' ) );
+            var warpdrive2 = new WarpDrive( document.getElementById( 'holder2' ) );
+		} );
+        
+    </script>
 </html>
