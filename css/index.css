@@ -1,0 +1,43 @@
+*{ margin:0; padding:0;}
+html,body{ 
+   height:100%;
+}
+.main{  
+	height:100%;
+}
+.box{
+	width:100%;
+	height:100%;
+}
+.one{ 
+    height:100%;
+}
+.two{
+	height:100%;
+}
+.box .jiantou{ width:0.4rem; height:0.4rem;font-size:1rem; text-align:center;font-weight:bold; color:#fff; font-family:"黑体";position:absolute; bottom:0rem; left:2.9rem;
+ -webkit-animation:run 2s linear infinite;text-shadow:0.01rem 0.01rem #000, -0.01rem -0.01rem #000;
+}
+@-webkit-keyframes run{
+    0%{ transform:translateY(-0.1rem); opacity:1;}	
+	100%{ transform:translateY(-1rem); opacity:0;}	
+}
+
+.box .music-logo{width: 8%;position: absolute;top: 0.3rem;right:0.3rem;}
+.playing{ -webkit-animation: circle 2s linear infinite; -moz-animation: circle 2s linear infinite; -o-animation:circle 2s linear infinite; animation:circle 2s linear infinite;}
+@-webkit-keyframes circle{ 
+     0%{ transform: rotate(0);}
+     100%{ transform:rotate(1turn)};
+}
+@-moz-keyframes circle{ 
+     0%{ transform: rotate(0);}
+     100%{ transform:rotate(1turn)};
+}
+@-o-keyframes circle{ 
+     0%{ transform: rotate(0);}
+     100%{ transform:rotate(1turn)};
+}
+@keyframes circle{
+    0%{ transform:rotate(0);}
+	100%{ transform:rotate(1turn)};	
+}

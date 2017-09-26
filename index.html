@@ -31,23 +31,12 @@ html,body{
 .two{
 	height:100%;
 }
-.one .one-back{ width:80%; position:absolute; top:2rem; left:0.7rem;}
-.one .one-no{ width:45%; position:absolute; top:3.3rem; left:1.8rem;}
-.one .one-we{ width:30%; position:absolute; top:4rem; left:2.4rem;}
-.one .one-more{ width:30%; position:absolute; top:4.7rem; left:2.4rem;}
-.box .jiantou{ width:0.4rem; height:0.4rem;font-size:1rem; text-align:center;font-weight:bold; color:#fff; font-family:"黑体";position:absolute; bottom:0rem; left:2.9rem;
- -webkit-animation:run 2s linear infinite;text-shadow:0.01rem 0.01rem #000, -0.01rem -0.01rem #000;
-}
+.box .jiantou{ width:0.5rem;position:absolute; bottom:0rem; left:3rem;animation:run 2s linear infinite;-webkit-animation:run 2s linear infinite;}
+.box .jiantou img{width:0.5rem;}
 @-webkit-keyframes run{
     0%{ transform:translateY(-0.1rem); opacity:1;}	
 	100%{ transform:translateY(-1rem); opacity:0;}	
 }
-.two .two-smile{ width:60%; position:absolute; top:2rem; left:1.3rem;}
-.two .two-sm-people{ width:62%; position:absolute; top:2.7rem; left:1.2rem;}
-.two .two-touxiang{ width:8%; position:absolute; top:2.7rem; left:2rem;}
-.two .two-total{ width:30%; position:absolute; top:2.7rem; left:2.6rem;}
-
-
 .box .music-logo{width: 8%;position: absolute;top: 0.3rem;right:0.3rem;}
 .playing{ -webkit-animation: circle 2s linear infinite; -moz-animation: circle 2s linear infinite; -o-animation:circle 2s linear infinite; animation:circle 2s linear infinite;}
 @-webkit-keyframes circle{ 
@@ -66,6 +55,10 @@ html,body{
     0%{ transform:rotate(0);}
 	100%{ transform:rotate(1turn)};	
 }
+.imgsize{width:100%;}
+.hb{position: absolute;top:0;left:0;}
+.cake{position: absolute; top:3.5rem;left:0;transform:rotate(-9deg);}
+.gzh{position: absolute; top:3rem;left:2.4rem;}
 </style>
 </head>
 
@@ -78,13 +71,15 @@ html,body{
     <div class="swiper-wrapper box " id="box">
          <div class="one swiper-slide" id="holder">
                <img src="imgs/music.gif" class="music-logo"/>
-              
-               <p class="jiantou">^</p>
+               <img src="imgs/hb.png" class="ani imgsize hb" swiper-animate-effect="zoomInRight" swiper-animate-duration="2s"/>
+               <img src="imgs/gzh.png" class="ani imgsize gzh" swiper-animate-effect="lightSpeedIn" swiper-animate-duration="2s" swiper-animate-delay="2s">
+               <img src="imgs/cake.png" class="ani imgsize cake" swiper-animate-effect="swing" swiper-animate-duration="2s" swiper-animate-delay="3s"/>
+               <p class="jiantou"><img src="imgs/arrow.png"/></p>
           </div>
           <div class=" two swiper-slide" id="holder2">
                <img src="imgs/music.gif" class="music-logo" />
               
-               <p class="jiantou">^</p>
+               <p class="jiantou"><img src="imgs/arrow.png"/></p>
           </div>
           
     </div>
